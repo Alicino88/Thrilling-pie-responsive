@@ -1,0 +1,425 @@
+
+/*Yayah! My very first attemp to make a fully responsive website turned out to be a fully messy code*/
+
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+ .logo{
+   width: 80px;
+ }
+
+ .logo-container{
+   margin-left: 10px;
+ }
+
+ nav{
+   width:100%;
+   height: 100px;
+   background-color: #a36d41;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   font-family: 'Work Sans', sans-serif;
+   color: #FFFFFF;
+   font-weight: bold;
+   font-size: 20px;
+ }
+
+ .ul-nav{
+   display: flex;
+   justify-content: flex-end;
+   width: 600px;
+   list-style-type: none;
+   align-items: center;
+   margin-right: 40px;
+ }
+
+.li-nav{
+  margin-left: 120px;
+}
+
+li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header-pic{
+  background-image: url("crostata.jpg");
+  height: 700px;
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.cta{
+  padding: 30px;
+  line-height: 90px;
+  color: #FFFFFF;
+}
+
+.header-h1{
+  font-size: 60px;
+}
+
+.header-h2{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+}
+
+.see-the-recipe{
+  padding: 20px 40px;
+  border-radius: 3px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a36d41;
+  background-color: #FFFFFF;
+  border: 1px solid #a36d41;
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+.about-section{
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+}
+
+.about-container{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top:80px;
+}
+
+.section-h1{
+  color: #a36d41;
+  font-size: 30px;
+}
+
+.story{
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.ingredients-section{
+  width: 100%;
+  height: 600px;
+  background-color: #a36d41;
+  color: #FFFFFF;
+  display: flex;
+  border: solid 1px black;
+}
+
+.ingredients-pic{
+  background-image: url("ingredients.jpg");
+  width:60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ingredients-list{
+  width: 40%;
+}
+
+.ingredients-h1{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ingredients-container{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.single-ingredient{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.single-ingredient:first-child {
+  margin-top: 0
+}
+.ingredients-icon{
+  width: 70px;
+  margin-left: 60px;
+  border: solid 1px black;
+}
+
+
+.text-ingredient{
+  font-size: 18px;
+  margin-left: 20px;
+  border: solid 1px black;
+}
+
+
+.recipe-section{
+  height: 450px;
+}
+
+.recipe-h1{
+  text-align: center;
+  color: #a36d41;
+  margin-top: 80px;
+}
+
+.recipe-container {
+  width: 100%;
+  margin: auto;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-top: 60px;
+}
+
+.recipe-step{
+  border: solid 7px #efc573;
+  padding: 30px;
+  width: 250px;
+}
+
+.recipe-step:hover{
+  border: solid 7px #a36d41;
+}
+
+.recipe-number{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.footer{
+  background-color: #a36d41;
+  height: 80px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet Styles..Ok I have designed the desktop version first (never again)...the result is a bunch of media queries!!! */
+
+/*Nav and about section*/
+@media only screen and (min-width: 500px) and (max-width: 970px) {
+  .li-nav{
+    margin-left: 50px;
+  }
+
+  .ul-nav{
+    margin-right: 10px;
+  }
+
+  .about-section{
+padding: 5px;
+  }
+  .about-container{
+    width: 90%;
+  }
+
+}
+/*I am sure there is a way to make this transition smoother...:-)*/
+@media only screen and (min-width: 500px) and (max-width: 630px) {
+  .about-section{
+   height: 600px;
+  }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 869px) {
+  .ingredients-section{
+    height: 750px;
+  }
+
+.ingredients-container{
+  width: 200px;
+}
+   .single-ingredient{
+   flex-direction: column;
+   width: 200px;
+  }
+
+  .ingredients-icon{
+    margin: auto;
+  }
+
+  .text-ingredient{
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 718px) and (max-width: 1001px) {
+  .recipe-container {
+    width: 70%;
+    margin-top: 30px;
+    height: 500px;
+    align-content: space-between;
+}
+
+.recipe-section{
+  height:700px;
+}
+
+}
+
+/*mobile, yet another nest of media queries...*/
+@media only screen and (max-width: 500px){
+  /*An alternative nav tab..for those who (like me) don't know Javascript yet*/
+nav{
+  flex-direction: column;
+  align-items: center;
+  height: 230px;
+
+}
+.ul-nav{
+  flex-direction: column;
+  margin-right: 0;
+  width: 100%;
+  justify-content: center;
+  height: 120px;
+  align-content: space-between;
+
+}
+
+.li-nav{
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.header-h1{
+  font-size: 40px;
+}
+
+.header-h2{
+font-size: 25px;
+}
+
+.see-the-recipe{
+  padding: 20px 20px;
+  border-radius: 3px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #a36d41;
+  background-color: #FFFFFF;
+  border: 1px solid #a36d41;
+  cursor: pointer;
+}
+
+.about-section{
+ height: 800px;
+}
+
+.about-container{
+  width: 90%;
+}
+
+.section-h1{
+  font-size: 23px;
+}
+
+}
+
+@media only screen and (max-width: 356px){
+  .about-section{
+   height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 499px){
+.ingredients-section{
+    flex-direction: column;
+    height: 1300px;
+
+  }
+
+.ingredients-pic{
+  height: 500px;
+  width:100%;
+}
+
+.ingredients-list{
+  width:100%;
+  margin-bottom: 30px;
+
+}
+.ingredients-container{
+  width: 200px;
+}
+   .single-ingredient{
+   flex-direction: column;
+   width: 200px;
+   margin-top: 40px;
+  }
+
+  .ingredients-icon{
+    margin: auto;
+    width: 100px;
+  }
+
+  .text-ingredient{
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+.footer{
+  font-size: 14px;
+}
+
+}
+
+@media only screen and (max-width: 717px) {
+
+ .header-pic{
+  background-image: url("crostata6.jpg");
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  .recipe-container {
+    width: 70%;
+    margin-top: 30px;
+    height: 1000px;
+    align-content: space-between;
+}
+
+.recipe-section{
+  height:1200px;
+}
+
+}
+
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
