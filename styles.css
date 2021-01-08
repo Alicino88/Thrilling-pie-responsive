@@ -1,149 +1,196 @@
-
-/*Yayah! My very first attemp to make a fully responsive website turned out to be a fully messy code*/
-
-  * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-  font-family: 'Work Sans', sans-serif;
+body {
+  font-family: "alata", sans-serif;
+  color: #211103;
+  font-size: 18px;
 }
 
-h1, h2{
-  font-family: 'Playfair Display', serif;
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
   font-size: 30px;
 }
 
- .logo{
-   width: 80px;
- }
-
- .logo-container{
-   margin-left: 10px;
- }
-
- nav{
-   width:100%;
-   height: 100px;
-   background-color: #a36d41;
-   display: flex;
-   justify-content: space-between;
-   padding: 10px;
-   font-family: 'Work Sans', sans-serif;
-   color: #FFFFFF;
-   font-weight: bold;
-   font-size: 20px;
- }
-
- .ul-nav{
-   display: flex;
-   justify-content: flex-end;
-   width: 600px;
-   list-style-type: none;
-   align-items: center;
-   margin-right: 40px;
- }
-
-.li-nav{
-  margin-left: 120px;
+.logo {
+  width: 80px;
 }
 
-li a{
+.logo-container {
+  margin-left: 10px;
+}
+
+nav {
+  width: 40vw;
+  height: 100px;
+  background-color: #9f2042;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Alata", sans-serif;
+  color: #f8e5ee;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+}
+
+.ul-nav {
+  display: flex;
+  width: 30vw;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.li-nav {
+  margin-left: 40px;
+}
+
+li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #f8e5ee;
+  display: block;
 }
 
-.header-pic{
-  background-image: url("crostata.jpg");
-  height: 700px;
-  width: 100%;
-  color: #FFFFFF;
+li a:hover {
+  border-bottom: 2px solid#f8e5ee;
+}
+
+/*to hide hamburger menu above 680px*/
+.icon {
+  display: none;
+}
+.pic-transparent-layer {
+  background: #9f2042;
+  width: 40vw;
   display: flex;
   align-items: center;
+  height: 750px;
 }
 
-.cta{
-  padding: 30px;
-  line-height: 90px;
-  color: #FFFFFF;
-}
-
-.header-h1{
-  font-size: 60px;
-}
-
-.header-h2{
-  font-family: 'Work Sans', sans-serif;
-  font-size: 30px;
-}
-
-.see-the-recipe{
-  padding: 20px 40px;
-  border-radius: 3px;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #a36d41;
-  background-color: #FFFFFF;
-  border: 1px solid #a36d41;
-  cursor: pointer;
-  border: solid 1px black;
-}
-
-.about-section{
-  width: 100%;
-  height: 500px;
-  padding: 10px;
-  display: flex;
-}
-
-.about-container{
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  margin-top:80px;
-}
-
-.section-h1{
-  color: #a36d41;
-  font-size: 30px;
-}
-
-.story{
-  margin-top: 20px;
-  line-height: 30px;
-}
-
-.ingredients-section{
-  width: 100%;
-  height: 600px;
-  background-color: #a36d41;
-  color: #FFFFFF;
-  display: flex;
-  border: solid 1px black;
-}
-
-.ingredients-pic{
-  background-image: url("ingredients.jpg");
-  width:60%;
+.header-pic {
+  background-image: url("https://raw.githubusercontent.com/Alicino88/Thrilling-pie-responsive/master/crostata.jpg");
+  position: relative;
+  height: 750px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.ingredients-list{
-  width: 40%;
+.cta {
+  padding: 50px;
+  margin-top: 60px;
+  line-height: 100px;
+  color: #ffffff;
 }
 
-.ingredients-h1{
+.header-h1 {
+  font-size: 70px;
+  font-family: "Xanh Mono", serif;
+  width: 30vw;
+  line-height: 80px;
+}
+
+.header-h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+.see-the-recipe {
+  padding: 15px 20px;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 35px;
+  background-color: #3d1308;
+  color: #f8e5ee;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.see-the-recipe:hover {
+  background-color: #f8e5ee;
+  color: #3d1308;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+  background-color: #f8e5ee;
+}
+
+.about-container {
+  width: 60vw;
+  margin: auto;
   text-align: center;
-  margin-top: 40px;
 }
 
-.ingredients-container{
-  width: 400px;
+.section-h1 {
+  color: #9f2042;
+  font-size: 30px;
+  font-family: "Xanh Mono", serif;
+}
+
+.story {
+  margin-top: 20px;
+  line-height: 30px;
+  color: #211103;
+}
+
+.ingredients-section {
+  width: 100%;
+  height: auto;
+  color: #f8e5ee;
+}
+
+.ingredients-pic {
+  background-image: url("https://raw.githubusercontent.com/Alicino88/Thrilling-pie-responsive/master/ingredients.jpg");
+  background-position: 0% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*position needs to be relative in order to be able to position absolutely the colored layer on top of it*/
+  position: relative;
+  height: 600px;
+}
+
+.ingredients-pic::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #9f2042;
+  width: 35vw;
+  opacity: 0.8;
+}
+
+.ingredients-list {
+  width: 40vw;
+  z-index: 2;
+  position: absolute;
+  color: #f8e5ee;
+  right: 0;
+  padding-left: 10%;
+}
+
+.ingredients-h1 {
+  font-family: "Xanh Mono", serif;
+  font-size: 30px;
+  text-align: left;
+  padding: 60px 0 10px 0;
+}
+
+.ingredients-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,73 +198,73 @@ li a{
   margin-top: 30px;
 }
 
-.single-ingredient{
+.single-ingredient {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 300px;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .single-ingredient:first-child {
-  margin-top: 0
+  margin-top: 0;
 }
-.ingredients-icon{
-  width: 70px;
-  margin-left: 60px;
-  border: solid 1px black;
+.ingredients-icon {
+  width: 50px;
 }
 
-
-.text-ingredient{
+.text-ingredient {
   font-size: 18px;
   margin-left: 20px;
-  border: solid 1px black;
+  font-family: "Alata", serif;
 }
 
-
-.recipe-section{
-  height: 450px;
+.recipe-section {
+  height: auto;
+  background-color: #f5f5f5;
 }
 
-.recipe-h1{
+.recipe-h1 {
   text-align: center;
-  color: #a36d41;
-  margin-top: 80px;
+  color: #9f2042;
+  font-size: 30px;
+  font-family: "Xanh Mono", serif;
 }
 
 .recipe-container {
-  width: 100%;
+  max-width: 1200px;
   margin: auto;
-  display:flex;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
   margin-top: 60px;
+  height: auto;
 }
 
-.recipe-step{
-  border: solid 7px #efc573;
+.recipe-step {
+  border: solid 7px#3D1308;
   padding: 30px;
   width: 250px;
+  margin: 10px;
 }
 
-.recipe-step:hover{
-  border: solid 7px #a36d41;
+.recipe-step:hover {
+  border: solid 7px #9f2042;
 }
 
-.recipe-number{
-  font-family: 'Playfair Display', serif;
+.recipe-number {
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 40px;
   margin-bottom: 30px;
   font-weight: bold;
+  color: #211103;
 }
 
-.footer{
-  background-color: #a36d41;
+.footer {
+  background-color: #211103;
   height: 80px;
-  color: #FFFFFF;
+  color: #f8e5ee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,201 +272,216 @@ li a{
 
 /* Tablet Styles..Ok I have designed the desktop version first (never again)...the result is a bunch of media queries!!! */
 
-/*Nav and about section*/
-@media only screen and (min-width: 500px) and (max-width: 970px) {
-  .li-nav{
-    margin-left: 50px;
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .header-h1 {
+    font-size: 60px;
+  }
+  .header-h2 {
+    font-size: 23px;
+  }
+  nav {
+    font-size: 16px;
   }
 
-  .ul-nav{
-    margin-right: 10px;
+  .about-container {
+    width: 60vw;
   }
-
-  .about-section{
-padding: 5px;
-  }
-  .about-container{
-    width: 90%;
-  }
-
-}
-/*I am sure there is a way to make this transition smoother...:-)*/
-@media only screen and (min-width: 500px) and (max-width: 630px) {
-  .about-section{
-   height: 600px;
-  }
-
-}
-
-@media only screen and (min-width: 500px) and (max-width: 869px) {
-  .ingredients-section{
-    height: 750px;
-  }
-
-.ingredients-container{
-  width: 200px;
-}
-   .single-ingredient{
-   flex-direction: column;
-   width: 200px;
-  }
-
-  .ingredients-icon{
-    margin: auto;
-  }
-
-  .text-ingredient{
-    margin: auto;
-  }
-
-}
-
-@media only screen and (min-width: 718px) and (max-width: 1001px) {
-  .recipe-container {
-    width: 70%;
-    margin-top: 30px;
-    height: 500px;
-    align-content: space-between;
-}
-
-.recipe-section{
-  height:700px;
-}
-
-}
-
-/*mobile, yet another nest of media queries...*/
-@media only screen and (max-width: 500px){
-  /*An alternative nav tab..for those who (like me) don't know Javascript yet*/
-nav{
-  flex-direction: column;
-  align-items: center;
-  height: 230px;
-
-}
-.ul-nav{
-  flex-direction: column;
-  margin-right: 0;
-  width: 100%;
-  justify-content: center;
-  height: 120px;
-  align-content: space-between;
-
-}
-
-.li-nav{
-  margin-left: 0px;
-  margin-top: 10px;
-}
-
-.header-h1{
-  font-size: 40px;
-}
-
-.header-h2{
-font-size: 25px;
-}
-
-.see-the-recipe{
-  padding: 20px 20px;
-  border-radius: 3px;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #a36d41;
-  background-color: #FFFFFF;
-  border: 1px solid #a36d41;
-  cursor: pointer;
-}
-
-.about-section{
- height: 800px;
-}
-
-.about-container{
-  width: 90%;
-}
-
-.section-h1{
-  font-size: 23px;
-}
-
-}
-
-@media only screen and (max-width: 356px){
-  .about-section{
-   height: 1000px;
-  }
-}
-
-@media only screen and (max-width: 499px){
-.ingredients-section{
-    flex-direction: column;
-    height: 1300px;
-
-  }
-
-.ingredients-pic{
-  height: 500px;
-  width:100%;
-}
-
-.ingredients-list{
-  width:100%;
-  margin-bottom: 30px;
-
-}
-.ingredients-container{
-  width: 200px;
-}
-   .single-ingredient{
-   flex-direction: column;
-   width: 200px;
-   margin-top: 40px;
-  }
-
-  .ingredients-icon{
-    margin: auto;
-    width: 100px;
-  }
-
-  .text-ingredient{
-    margin: auto;
-    margin-top: 10px;
-    font-size: 20px;
-  }
-
-.footer{
-  font-size: 14px;
-}
-
-}
-
-@media only screen and (max-width: 717px) {
-
- .header-pic{
-  background-image: url("crostata6.jpg");
-  align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
   .recipe-container {
-    width: 70%;
-    margin-top: 30px;
-    height: 1000px;
-    align-content: space-between;
+    width: 65vw;
+  }
+
+  .recipe-step {
+    margin: 20px;
+  }
 }
 
-.recipe-section{
-  height:1200px;
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+  nav {
+    width: 100vw;
+    justify-content: center;
+    font-size: 16px;
+    height: 70px;
+  }
+
+  .ul-nav {
+    margin-right: 0;
+    width: 40vw;
+    margin-left: 0px;
+    justify-content: space-around;
+  }
+
+  .li-nav {
+    margin-left: 0;
+  }
+
+  .header-h1 {
+    font-size: 40px;
+    width: 60vw;
+    line-height: 50px;
+  }
+  .header-h2 {
+    font-size: 18px;
+  }
+  nav {
+    font-size: 16px;
+  }
+  .pic-transparent-layer {
+    background: rgba(159, 32, 66, 0.8);
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    height: 330px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .cta {
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+  .header-pic {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .see-the-recipe {
+    padding: 15px 20px;
+    font-family: "Alata", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    background-color: #3d1308;
+    color: #f8e5ee;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .about-container {
+    width: 80vw;
+    text-align: left;
+  }
+
+  .ingredients-pic::before {
+    width: 40vw;
+  }
+  .ingredients-list {
+    padding-left: 5%;
+  }
+
+  .recipe-container {
+    width: 80vw;
+  }
+
+  .recipe-step {
+    margin: 20px;
+  }
 }
 
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+  nav {
+    width: 100vw;
+    justify-content: center;
+    font-size: 16px;
+    height: 70px;
+  }
+
+  .ul-nav {
+    margin-right: 0;
+    width: 40vw;
+    margin-left: 0px;
+    justify-content: flex-end;
+    position: relative;
+    display: none;
+  }
+
+  .responsive {
+    width: 100vw;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .responsive a {
+    background-color: #9f2042;
+    display: block;
+    height: 50px;
+  }
+
+  .responsive a:hover {
+    border-bottom: none;
+  }
+
+  .icon {
+    color: white;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    width: 30px;
+    font-size: 30px;
+  }
+
+  .li-nav {
+    margin-left: 0;
+  }
+
+  .pic-transparent-layer {
+    background: rgba(159, 32, 66, 0.6);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+  }
+
+  .header-pic {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cta {
+    padding: 30px;
+  }
+
+  .header-h1 {
+    font-size: 40px;
+    width: 60vw;
+    line-height: 50px;
+  }
+  .header-h2 {
+    font-size: 18px;
+  }
+
+  .about-container {
+    width: 85vw;
+    text-align: left;
+  }
+
+  .ingredients-pic::before {
+    width: 100vw;
+  }
+  .ingredients-list {
+    width: 100%;
+  }
+
+  .recipe-container {
+    width: 80vw;
+  }
+
+  .recipe-step {
+    margin: 20px;
+  }
 }
 
 input {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
