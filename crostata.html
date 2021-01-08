@@ -1,112 +1,169 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>The amazing crostata recipe</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-    <nav>
-      <div class="logo-container"><img src="pie.svg" class="logo"></div>
-      <ul class="ul-nav">
-        <li class="li-nav"><a href="#about">About</a></li>
-        <li class="li-nav"><a href="#ingredients">Ingredients</a></li>
-        <li class="li-nav"><a href="#recipe">Recipe</a></li>
-      </ul>
-    </nav>
     <header class="header-pic">
-    <div class="cta">
-      <h1 class="header-h1">Ready for your crostata?</h1>
-      <h2 class="header-h2">Simple and delicius!</h2>
-      <a href="#recipe"><input type="button" name="recipe" value="Learn how to bake it" class="see-the-recipe"></a>
-    </div>
+      <nav>
+        <ul class="ul-nav" id="menu-links">
+          <li class="li-nav"><a href="#about">About</a></li>
+          <li class="li-nav"><a href="#ingredients">Ingredients</a></li>
+          <li class="li-nav"><a href="#recipe">Recipe</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i
+        ></a>
+      </nav>
+
+      <div class="pic-transparent-layer">
+        <div class="cta">
+          <h1 class="header-h1">Ready for your crostata?</h1>
+          <h2 class="header-h2">
+            Simple and delicius! From centuries the easiest and yet the most
+            delicious among Italian desserts.
+          </h2>
+          <a href="#recipe"
+            ><input
+              type="button"
+              name="recipe"
+              value="Learn how to bake it!"
+              class="see-the-recipe"
+          /></a>
+        </div>
+      </div>
     </header>
-    <section class="about-section" id="about">
+    <section class="section" id="about">
       <div class="about-container">
-      <h1 class="section-h1">The legendary crostata pie</h1>
-      <p class="story">A crostata is an Italian baked tart or pie, also known as coppi in Naples and sfogliate in Lombardy.The earliest known use of crostata in its modern sense can be traced to the cookbooks Libro de Arte Coquinaria (Book of the Art of Cooking) by Martino da Como, published circa 1465, and Cuoco napolitano (Neapolitan Cook), published in the late 15th century containing a recipe (number 94) titled Crostata de Caso, Pane, etc..
-A crostata is a "rustic free-form version of an open fruit tart" that may also be baked in a pie plate. Historically, it also referred to an "open-faced sandwich or canapé" because of its crusted appearance,or a chewet, a type of meat pie. Source:Wikipedia
-    </div>
+        <h1 class="section-h1">The legendary crostata pie</h1>
+        <p class="story">
+          A crostata is an Italian baked tart or pie, also known as coppi in
+          Naples and sfogliate in Lombardy. The earliest known use of crostata
+          in its modern sense can be traced to the cookbooks Libro de Arte
+          Coquinaria (Book of the Art of Cooking) by Martino da Como, published
+          circa 1465, and Cuoco napolitano (Neapolitan Cook), published in the
+          late 15th century containing a recipe (number 94) titled Crostata de
+          Caso, Pane, etc.. A crostata is a "rustic free-form version of an open
+          fruit tart" that may also be baked in a pie plate. Historically, it
+          also referred to an "open-faced sandwich or canapé" because of its
+          crusted appearance,or a chewet, a type of meat pie. Source:Wikipedia
+        </p>
+      </div>
     </section>
-    <section class="ingredients-section" id="ingredients">
-      <div class="ingredients-pic"></div>
+    <section class="ingredients-pic" id="ingredients">
       <div class="ingredients-list">
         <h1 class="ingredients-h1">Ingredients</h1>
-       <div class="ingredients-container">
+        <div class="ingredients-container">
+          <div class="single-ingredient">
+            <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv%0D%0Ac3ZnIiBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWln%0D%0AaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiBjbGFzcz0iIj48%0D%0AZz48Zz48Zz48cGF0aCBkPSJtMTYzLjQ5IDUxMmMtNC4yNCAwLTguMDk3LTIuNzg2LTkuNDYtNi43%0D%0AODktMS4zMjItMy44ODItLjA2NC04LjM0NCAzLjEyLTEwLjkzOCAzLjI5MS0yLjY4MSA4LjAxMi0y%0D%0ALjk4NiAxMS42MjMtLjc1OCAzLjQ5MyAyLjE1NSA1LjM0MyA2LjQxMyA0LjUyNyAxMC40MzYtLjkz%0D%0ANiA0LjYxMy01LjA4OCA4LjA0OS05LjgxIDguMDQ5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIg%0D%0AY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgZmlsbD0iI0ZGRkZG%0D%0ARiIvPjxwYXRoIGQ9Im00MjkuNDU0IDIzOS4wMTdjLS44NDEtMy43OTUtMy44MDYtNi43Ni03LjYw%0D%0AMi03LjYwMS0uMTktLjA0Mi0uODI3LS4xOC0xLjg0LS4zNjggMTguMTUzLTIzLjQ2MiA5LjgyNy02%0D%0AMi4zMzggOS40NDItNjQuMDc3LS44NDEtMy43OTUtMy44MDYtNi43Ni03LjYwMi03LjYwMS0xLjEx%0D%0AOC0uMjQ4LTE3LjYxMi0zLjc4My0zNS40ODItMS40MzggMy44NzMtNy4xMDIgNi40ODYtMTUuMDM5%0D%0AIDYuNDg2LTIzLjUzMSAwLTMyLjEyNC0zNy4zODYtNTYuMzItMzguOTc3LTU3LjMzNC0zLjI3OS0y%0D%0ALjA4OS03LjQ3MS0yLjA4OS0xMC43NSAwLTEuNTkxIDEuMDE0LTM4Ljk3NiAyNS4yMTEtMzguOTc2%0D%0AIDU3LjMzNCAwIDguNDkxIDIuNjEyIDE2LjQyOCA2LjQ4NSAyMy41My0xNy44Ny0yLjM0Ni0zNC4z%0D%0ANjQgMS4xOS0zNS40ODEgMS40MzgtMy43OTYuODQtNi43NjEgMy44MDUtNy42MDIgNy42MDEtLjM4%0D%0ANSAxLjczOS04LjcxMSA0MC42MTUgOS40NDEgNjQuMDc3LTEuMDEzLjE4OC0xLjY0OS4zMjUtMS44%0D%0AMzkuMzY4LTMuNzk2Ljg0LTYuNzYxIDMuODA1LTcuNjAyIDcuNjAxLS4zOTEgMS43NjQtOC45NTcg%0D%0ANDEuNzYyIDEwLjI1NiA2NS4wOTgtMS40ODguMjYxLTIuNDE3LjQ2Mi0yLjY1NC41MTQtMy43OTYu%0D%0AODQtNi43NjEgMy44MDUtNy42MDIgNy42MDEtLjQwOCAxLjg0My05LjczMyA0NS4zODcgMTIuOTgg%0D%0ANjguMTAydi4wMDFjMTIuMzMgMTIuMzI5IDMwLjc5NCAxNS4yMTggNDUuMzk3IDE1LjIxOCA0Ljcw%0D%0AMiAwIDkuMDA0LS4zIDEyLjU3MS0uNjh2MTA3LjEzYzAgNS41MjMgNC40NzggMTAgMTAgMTBzMTAt%0D%0ANC40NzcgMTAtMTB2LTEwNy4xMjljMy41NjcuMzgxIDcuODY5LjY4IDEyLjU3MS42OCAxNC42MDIg%0D%0AMCAzMy4wNjktMi44OTEgNDUuMzk2LTE1LjIxOXYuMDAxYzIyLjcxNS0yMi43MTQgMTMuMzktNjYu%0D%0AMjU5IDEyLjk4MS02OC4xMDItLjg0MS0zLjc5NS0zLjgwNi02Ljc2LTcuNjAyLTcuNjAxLS4yMzct%0D%0ALjA1My0xLjE2Ny0uMjUzLTIuNjU1LS41MTQgMTkuMjE3LTIzLjMzNyAxMC42NTEtNjMuMzM0IDEw%0D%0ALjI2LTY1LjA5OXptLTE0My40NDIgMTAuODU1YzEyLjI5NC0xLjUwOCAzMi44OC0xLjU1OCA0My4x%0D%0AMDUgOC42NjcgNy4wNzIgNy4wNzIgOS4yMjggMTkuMDk3IDkuMzg4IDI5LjkwNnYyLjY4OGMtLjA1%0D%0ANiAzLjgzLS4zNDIgNy40MzItLjcyIDEwLjUxMi0xMi4yOTIgMS41MDYtMzIuODggMS41NTktNDMu%0D%0AMTA1LTguNjY3LTEwLjIyOS0xMC4yMy0xMC4xNzQtMzAuODIyLTguNjY4LTQzLjEwNnptNzMuMTk0%0D%0AIDUxLjc3MWMtLjMzNC0yLjY3My0uNTk4LTUuNzQtLjcwMS05LjAwOHYtNS43OTljLjM0MS0xMC4z%0D%0ANTUgMi42MjktMjEuNTM4IDkuMzg5LTI4LjI5NyAxMC4yMjgtMTAuMjI5IDMwLjgxOC0xMC4xNzYg%0D%0ANDMuMTA0LTguNjY4IDEuNTA3IDEyLjI5NCAxLjU2IDMyLjg4LTguNjY4IDQzLjEwNy0xMC4yMzMg%0D%0AMTAuMjM0LTMwLjg0MyAxMC4xNzMtNDMuMTI0IDguNjY1em01MS43OTItMTIzLjgxOGMxLjUwNyAx%0D%0AMi4yOTQgMS41NiAzMi44OC04LjY2OCA0My4xMDYtMTAuMjMzIDEwLjIzNC0zMC44NDMgMTAuMTc0%0D%0ALTQzLjEyNCA4LjY2Ni0uMzM0LTIuNjczLS41OTgtNS43NC0uNzAxLTkuMDA4di01Ljc5OWMuMzQx%0D%0ALTEwLjM1NSAyLjYyOS0yMS41MzggOS4zODktMjguMjk3IDEwLjIyNy0xMC4yMjggMzAuODE4LTEw%0D%0ALjE3NSA0My4xMDQtOC42Njh6bS02Mi40NzgtODAuMDQ0YzkuNzU1IDcuNTg5IDI0LjMzNyAyMi4w%0D%0ANjcgMjQuMzM3IDM2LjYyMiAwIDE0LjQ3My0xNC42MTUgMjkuMDAzLTI0LjM2NiAzNi42MjItOS43%0D%0ANTQtNy41ODktMjQuMzM2LTIyLjA2Ny0yNC4zMzYtMzYuNjIyLS4wMDEtMTQuNDc0IDE0LjYxNC0y%0D%0AOS4wMDQgMjQuMzY1LTM2LjYyMnptLTYyLjUwOCA4MC4wNDVjMTIuMjktMS41MDggMzIuODc5LTEu%0D%0ANTU5IDQzLjEwNSA4LjY2OCA3LjA3MiA3LjA3MiA5LjIyOCAxOS4wOTcgOS4zODggMjkuOTA2djIu%0D%0ANjg4Yy0uMDU2IDMuODMtLjM0MiA3LjQzMi0uNzIgMTAuNTEyLTEyLjI5MiAxLjUwNy0zMi44OCAx%0D%0ALjU1OS00My4xMDUtOC42NjgtMTAuMjI5LTEwLjIyOS0xMC4xNzQtMzAuODIyLTguNjY4LTQzLjEw%0D%0ANnptNTEuNzczIDE5Ny4wMzJjLTEyLjI5MiAxLjUwNy0zMi44OCAxLjU1OS00My4xMDUtOC42Njgt%0D%0AMTAuMjI4LTEwLjIyOS0xMC4xNzQtMzAuODIxLTguNjY4LTQzLjEwNSAxMi4yOS0xLjUwNiAzMi44%0D%0ANzktMS41NTkgNDMuMTA1IDguNjY3IDcuMDcyIDcuMDcyIDkuMjI4IDE5LjA5NyA5LjM4OCAyOS45%0D%0AMDZ2Mi42ODhjLS4wNTYgMy44My0uMzQyIDcuNDMyLS43MiAxMC41MTJ6bTY0LjU0NS04LjY2OGMt%0D%0AMTAuMjMzIDEwLjIzNC0zMC44NDMgMTAuMTc0LTQzLjEyNCA4LjY2Ny0uMzM0LTIuNjczLS41OTgt%0D%0ANS43NC0uNzAxLTkuMDA4di01Ljc5OWMuMzQxLTEwLjM1NSAyLjYyOS0yMS41MzggOS4zODktMjgu%0D%0AMjk3IDEwLjIzMy0xMC4yMzQgMzAuODQzLTEwLjE3NCA0My4xMjQtOC42NjYgMS41MzEgMTIuMjYz%0D%0AIDEuNjA0IDMyLjgxMS04LjY4OCA0My4xMDN6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFz%0D%0Acz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIiBmaWxsPSIjRkZGRkZGIi8+%0D%0APHBhdGggZD0ibTI0NC40NDMgMTYzLjUxNmMtLjg0MS0zLjc5NS0zLjgwNi02Ljc2LTcuNjAyLTcu%0D%0ANjAxLS4xOS0uMDQyLS44MjctLjE4LTEuODQtLjM2OCAxOC4xNTItMjMuNDYyIDkuODI2LTYyLjMz%0D%0AOSA5LjQ0MS02NC4wNzgtLjg0MS0zLjc5NS0zLjgwNi02Ljc2LTcuNjAyLTcuNjAxLTEuMTE4LS4y%0D%0ANDgtMTcuNjExLTMuNzg0LTM1LjQ4MS0xLjQzOCAzLjg3My03LjEwMiA2LjQ4NS0xNS4wMzkgNi40%0D%0AODUtMjMuNTMgMC0zMi4xMjMtMzcuMzg1LTU2LjMyLTM4Ljk3Ni01Ny4zMzQtMy4yNzgtMi4wODkt%0D%0ANy40Ny0yLjA5LTEwLjc1IDAtMS41OTEgMS4wMTQtMzguOTc2IDI1LjIxMS0zOC45NzYgNTcuMzM0%0D%0AIDAgOC40OTEgMi42MTMgMTYuNDI5IDYuNDg1IDIzLjUzMS0xNy44Ny0yLjM0Ni0zNC4zNjQgMS4x%0D%0AODktMzUuNDgxIDEuNDM4LTMuNzk2Ljg0LTYuNzYxIDMuODA1LTcuNjAyIDcuNjAxLS4zODUgMS43%0D%0AMzktOC43MTEgNDAuNjE2IDkuNDQyIDY0LjA3Ny0xLjAxMy4xODgtMS42NS4zMjYtMS44NC4zNjgt%0D%0AMy43OTYuODQtNi43NjEgMy44MDUtNy42MDIgNy42MDEtLjM5MSAxLjc2NC04Ljk1NyA0MS43NjIg%0D%0AMTAuMjU2IDY1LjA5OC0xLjQ4OC4yNjEtMi40MTguNDYyLTIuNjU1LjUxNS0zLjc5Ni44NC02Ljc2%0D%0AMSAzLjgwNS03LjYwMiA3LjYwMS0uMzg3IDEuNzQ3LTguNzkxIDQwLjk4OSA5LjcwNCA2NC40MTQt%0D%0AMS4xNjYuMjEyLTEuODk2LjM3LTIuMTAzLjQxNi0zLjc5Ni44NC02Ljc2MSAzLjgwNS03LjYwMiA3%0D%0ALjYwMS0uNDA4IDEuODQzLTkuNzMzIDQ1LjM4OCAxMi45ODEgNjguMTAyIDEyLjMyOSAxMi4zMjkg%0D%0AMzAuNzkzIDE1LjIxOSA0NS4zOTcgMTUuMjE5IDQuNzAyIDAgOS4wMDQtLjMgMTIuNTcxLS42ODF2%0D%0ANjQuODEyYzAgNS41MjMgNC40NzggMTAgMTAgMTAgNS41MjMgMCAxMC00LjQ3NyAxMC0xMHYtNjQu%0D%0AODExYzMuNTY3LjM4MSA3Ljg2OS42OCAxMi41NzEuNjggMTQuNjAzIDAgMzMuMDY4LTIuODkxIDQ1%0D%0ALjM5Ni0xNS4yMTggMjIuNzE0LTIyLjcxNCAxMy4zODktNjYuMjU5IDEyLjk4LTY4LjEwMi0uODQx%0D%0ALTMuNzk1LTMuODA2LTYuNzYtNy42MDItNy42MDEtLjIwNi0uMDQ2LS45MzctLjIwNC0yLjEwMi0u%0D%0ANDE2IDE4LjQ5NS0yMy40MjUgMTAuMDkxLTYyLjY2NiA5LjcwNC02NC40MTQtLjg0MS0zLjc5NS0z%0D%0ALjgwNi02Ljc2LTcuNjAyLTcuNjAxLS4yMzctLjA1My0xLjE2Ni0uMjUzLTIuNjU0LS41MTQgMTku%0D%0AMjE4LTIzLjMzOCAxMC42NTItNjMuMzM1IDEwLjI2MS02NS4xem0tMjcuMTIzIDUzLjk2Yy0xMC4y%0D%0AMjkgMTAuMjMxLTMwLjgyNCAxMC4xNzYtNDMuMTA1IDguNjY5LS4zOC0zLjA5Ni0uNjY3LTYuNzE5%0D%0ALS43MjEtMTAuNTY5di0yLjU4OGMuMTU0LTEwLjgyMiAyLjMwNy0yMi44NjkgOS4zODgtMjkuOTUg%0D%0AMTAuMjM0LTEwLjIzMyAzMC44NDMtMTAuMTc0IDQzLjEyNC04LjY2NiAxLjUzMiAxMi4yNjQgMS42%0D%0AMDYgMzIuODEyLTguNjg2IDQzLjEwNHptMCA3My4yMTNjLTEwLjIzNCAxMC4yMzYtMzAuODQ2IDEw%0D%0ALjE3NC00My4xMjQgOC42NjctLjMzNC0yLjY3Mi0uNTk4LTUuNzM4LS43MDEtOS4wMDV2LTUuODEy%0D%0AYy4zNDItMTAuMzUyIDIuNjMxLTIxLjUzIDkuMzg4LTI4LjI4NyAxMC4yMzQtMTAuMjM1IDMwLjg0%0D%0AMi0xMC4xNzYgNDMuMTI0LTguNjY3IDEuNTMxIDEyLjI2NCAxLjYwNSAzMi44MTMtOC42ODcgNDMu%0D%0AMTA0em0tMTE2LjMxOS00My4xMDVjMTIuMjkyLTEuNTA2IDMyLjg3OS0xLjU1OCA0My4xMDUgOC42%0D%0ANjggNy4wNzEgNy4wNzEgOS4yMjggMTkuMDk0IDkuMzg5IDI5LjkwMnYyLjcwMWMtLjA1NiAzLjgz%0D%0ANS0uMzQzIDcuNDQxLS43MjIgMTAuNTIyLTEyLjI2NiAxLjUzLTMyLjgxMyAxLjYwMy00My4xMDQt%0D%0AOC42ODd2LS4wMDFjLTEwLjIyOS0xMC4yMjktMTAuMTc0LTMwLjgyMS04LjY2OC00My4xMDV6bS4w%0D%0AMDItNzMuMjMzYzEyLjI2My0xLjUyOSAzMi44MTMtMS42MDUgNDMuMTA0IDguNjg3IDcuMDcxIDcu%0D%0AMDcxIDkuMjI4IDE5LjA5NCA5LjM4OSAyOS45MDJ2Mi43MDFjLS4wNTYgMy44MzUtLjM0MyA3LjQ0%0D%0AMS0uNzIyIDEwLjUyMy0xMi4yNjYgMS41My0zMi44MTMgMS42MDQtNDMuMTA0LTguNjg3di0uMDAx%0D%0AYy0xMC4yMzUtMTAuMjM0LTEwLjE3NS0zMC44NDMtOC42NjctNDMuMTI1em0xMjUuMDA0LTcyLjAy%0D%0ANWMxLjUzMSAxMi4yNjQgMS42MDUgMzIuODEzLTguNjg2IDQzLjEwNC0xMC4yMjkgMTAuMjMxLTMw%0D%0ALjgyNCAxMC4xNzUtNDMuMTA1IDguNjY5LS4zOC0zLjA5Ni0uNjY3LTYuNzE5LS43MjEtMTAuNTY5%0D%0Adi0yLjU4OGMuMTU0LTEwLjgyMiAyLjMwNy0yMi44NjkgOS4zODgtMjkuOTUgMTAuMjM0LTEwLjIz%0D%0ANSAzMC44NDYtMTAuMTc0IDQzLjEyNC04LjY2NnptLTYyLjUxMy04MC4wMzVjOS43NTkgNy42Mjgg%0D%0AMjQuMzUyIDIyLjE0OCAyNC4zNTIgMzYuNjEgMCAxNC40NjYtMTQuNTk5IDI4Ljk4OC0yNC4zNSAz%0D%0ANi42MS05Ljc1OS03LjYyOC0yNC4zNTItMjIuMTQ3LTI0LjM1Mi0zNi42MSAwLTE0LjQ2NiAxNC41%0D%0AOTktMjguOTg4IDI0LjM1LTM2LjYxem0tNjIuNDkxIDgwLjAxNGMxMi4yNjctMS41MzEgMzIuODEz%0D%0ALTEuNjA0IDQzLjEwNCA4LjY4OCA3LjA3MSA3LjA3MSA5LjIyOCAxOS4wOTQgOS4zODkgMjkuOTAy%0D%0AdjIuNzAxYy0uMDU2IDMuODM1LS4zNDMgNy40NDEtLjcyMiAxMC41MjMtMTIuMjY2IDEuNTMtMzIu%0D%0AODEzIDEuNjA0LTQzLjEwNC04LjY4N3YtLjAwMWMtMTAuMjM1LTEwLjIzNS0xMC4xNzUtMzAuODQ0%0D%0ALTguNjY3LTQzLjEyNnptNTEuNzcgMjY5LjUwMWMtMTIuMjY2IDEuNTMtMzIuODEzIDEuNjA0LTQz%0D%0ALjEwNC04LjY4Ny0xMC4yMzQtMTAuMjM0LTEwLjE3NS0zMC44NDMtOC42NjctNDMuMTI1IDEyLjI2%0D%0ANy0xLjUzMSAzMi44MTMtMS42MDQgNDMuMTA0IDguNjg4IDcuMDcxIDcuMDcxIDkuMjI4IDE5LjA5%0D%0ANCA5LjM4OSAyOS45MDJ2Mi43MDFjLS4wNTYgMy44MzMtLjM0MyA3LjQ0LS43MjIgMTAuNTIxem02%0D%0ANC41NDctOC42ODdjLTEwLjIzNCAxMC4yMzUtMzAuODQ2IDEwLjE3NC00My4xMjQgOC42NjctLjMz%0D%0ANC0yLjY3Mi0uNTk4LTUuNzM4LS43MDEtOS4wMDV2LTUuODEyYy4zNDItMTAuMzUyIDIuNjMxLTIx%0D%0ALjUzIDkuMzg4LTI4LjI4NyAxMC4yMzQtMTAuMjM2IDMwLjg0Ni0xMC4xNzUgNDMuMTI0LTguNjY3%0D%0AIDEuNTMxIDEyLjI2NCAxLjYwNSAzMi44MTItOC42ODcgNDMuMTA0eiIgZGF0YS1vcmlnaW5hbD0i%0D%0AIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgZmls%0D%0AbD0iI0ZGRkZGRiIvPjwvZz48L2c+PC9nPiA8L3N2Zz4K"
+              class="ingredients-icon"
+            />
 
-           <div class="single-ingredient">
+            <p class="text-ingredient">300gr of flour</p>
+          </div>
 
-             <img src="gluten.svg" class="ingredients-icon">
-             <p class="text-ingredient">300gr of flour</p>
-
-           </div>
-
-           <div class="single-ingredient">
-
-            <img src="egg.svg" class="ingredients-icon">
+          <div class="single-ingredient">
+            <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv%0D%0Ac3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0i%0D%0AMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ2MC4wMDcgNDYw%0D%0ALjAwNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDYwLjAwNyA0NjAuMDA3OyIg%0D%0AeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48Zz48Zz4K%0D%0ACTxnPgoJCTxwYXRoIGQ9Ik0zMzAuNCw2MS4yMDNjLTM4LjQsMC03Ni44LDQzLjItMTAwLDg5LjZj%0D%0ALTI1LjYtNTEuMi02NC44LTg5LjYtMTAwLTg5LjZjLTYwLDAtMTMwLjQsMTEwLjQtMTMwLjQsMjAz%0D%0ALjIgICAgYzAsNjcuMiw0NC44LDEzNC40LDEyOS42LDEzNC40YzQ0LjgsMCw3OC40LTE4LjQsMTAw%0D%0ALTQ2LjRjMjgsMzMuNiw2OS42LDQ2LjQsMTAwLjgsNDYuNGM4NC44LDAsMTI5LjYtNjgsMTI5LjYt%0D%0AMTM0LjQgICAgQzQ2MC44LDE3MS42MDMsMzkwLjQsNjEuMjAzLDMzMC40LDYxLjIwM3ogTTEzMC40%0D%0ALDM4Mi44MDNjLTU0LjQsMC0xMTMuNi0zNi44LTExMy42LTExOC40YzAtODQsNjIuNC0xODcuMiwx%0D%0AMTMuNi0xODcuMiAgICBjMzIuOCwwLDcwLjQsNDIuNCw5Mi44LDk1LjJjMCwwLDAsMCwwLDAuOGMx%0D%0AMi44LDI5LjYsMjAuOCw2MS42LDIwLjgsOTJDMjQ0LDM0Ni4wMDMsMTg0LjgsMzgyLjgwMywxMzAu%0D%0ANCwzODIuODAzeiBNMzMwLjQsMzgyLjgwMyAgICBjLTI4LjgsMC02Ny4yLTEyLTkxLjItNDRjMTMu%0D%0ANi0yMi40LDIwLTQ4LjgsMjAtNzQuNGMwLTMxLjItOC02NC44LTIwLjgtOTUuMmMyNC44LTU0LjQs%0D%0ANjEuNi05Mi44LDkyLTkyLjggICAgYzUxLjIsMCwxMTMuNiwxMDMuMiwxMTMuNiwxODcuMkM0NDQu%0D%0AOCwzNDYuMDAzLDM4NS42LDM4Mi44MDMsMzMwLjQsMzgyLjgwM3oiIGRhdGEtb3JpZ2luYWw9IiMw%0D%0AMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiIGZpbGw9%0D%0AIiNGRkZGRkYiLz4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTYwLDE5My4yMDNjLTQt%0D%0AMS42LTguOCwwLjgtMTAuNCw0LjhjLTAuOCwyLjQtMjMuMiw2MC44LTQuOCwxMDEuNmMxLjYsMi40%0D%0ALDQsNCw3LjIsNGMwLjgsMCwyLjQsMCwzLjItMC44ICAgIGM0LTEuNiw1LjYtNi40LDQtMTAuNGMt%0D%0AMTYtMzQuNCw0LjgtODgsNS42LTg4LjhDNjYuNCwxOTkuNjAzLDY0LDE5NC44MDMsNjAsMTkzLjIw%0D%0AM3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRf%0D%0AY29sb3I9IiMwMDAwMDAiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBh%0D%0AdGggZD0iTTMxOS4yLDEwNi4wMDNjLTMuMi00LTgtNC0xMS4yLTAuOGMtMS42LDEuNi00Ni40LDQ2%0D%0ALjQtNDUuNiw5MS4yYzAsNCw0LDgsOCw4YzQuOCwwLDgtNCw4LThjLTAuOC0zNy42LDQwLTc5LjIs%0D%0ANDAuOC03OS4yICAgIEMzMjIuNCwxMTQuMDAzLDMyMi40LDEwOS4yMDMsMzE5LjIsMTA2LjAwM3oi%0D%0AIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29s%0D%0Ab3I9IiMwMDAwMDAiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+Cg=="
+              class="ingredients-icon"
+            />
             <p class="text-ingredient">2 eggs</p>
-
           </div>
 
-           <div class="single-ingredient">
-
-            <img src="sugar.svg" class="ingredients-icon">
+          <div class="single-ingredient">
+            <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv%0D%0Ac3ZnIiBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWln%0D%0AaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4Ij48Zz48Zz48Zz48%0D%0AcGF0aCBkPSJtNTExLjg2MyAyODIuNzgxYzAtMy4xNzEtMS43MDctNi4wOTYtNC40NjgtNy42NTZs%0D%0ALS4wMDMtLjAwMWMtLjAwOC0uMDA2LS4wMTctLjAxMS0uMDI1LS4wMTYtLjUxLS4zMzctMS4wNTIt%0D%0ALjYyOS0xLjYyMi0uODY5bC0xMTYuODE1LTUyLjIwNHYtMTU3LjA5OWMwLS4wNzYtLjAwMS0uMTUx%0D%0ALS4wMDMtLjIyNi0uMDAxLS4wMjUtLjAwMS0uMDQ5LS4wMDItLjA3NC0uMDAxLS4wNS0uMDAzLS4x%0D%0AMDEtLjAwNi0uMTUxLS4wMDEtLjAzLS4wMDItLjA2LS4wMDQtLjA5LS4wMDMtLjA2NC0uMDA3LS4x%0D%0AMjktLjAxMi0uMTkzLS4wMDMtLjA0NS0uMDA3LS4wODktLjAxMS0uMTMzLS4wMDItLjAyMy0uMDA0%0D%0ALS4wNDctLjAwNi0uMDctLjE4Ny0yLjAwMi0uOTY0LTMuODMzLTIuMTU1LTUuMzE3LS4wMTctLjAy%0D%0AMS0uMDM0LS4wNDItLjA1MS0uMDYzLS4wMjQtLjAyOS0uMDQ4LS4wNTgtLjA3Mi0uMDg3LS4wMjUt%0D%0ALjAzLS4wNS0uMDYtLjA3Ni0uMDktLjAxOS0uMDIyLS4wMzctLjA0NC0uMDU2LS4wNjUtLjA0NS0u%0D%0AMDUyLS4wOTEtLjEwNC0uMTM4LS4xNTUtLjAwOS0uMDEtLjAxOC0uMDItLjAyOC0uMDMtLjA0Mi0u%0D%0AMDQ2LS4wODUtLjA5Mi0uMTI4LS4xMzctLjAxLS4wMTEtLjAyLS4wMjEtLjAzMS0uMDMyLS4wNDgt%0D%0ALjA1LS4wOTYtLjEtLjE0NS0uMTQ5LS4wMDMtLjAwMy0uMDA2LS4wMDYtLjAwOS0uMDA5LS4wNTUt%0D%0ALjA1NS0uMTExLS4xMS0uMTY4LS4xNjQtLjAwMi0uMDAyLS4wMDQtLjAwMy0uMDA1LS4wMDUtLjA1%0D%0AMi0uMDQ5LS4xMDQtLjA5OC0uMTU3LS4xNDYtLjAxLS4wMDktLjAyLS4wMTgtLjAzLS4wMjctLjA0%0D%0AOC0uMDQzLS4wOTctLjA4Ny0uMTQ2LS4xMjktLjAwOC0uMDA3LS4wMTYtLjAxNS0uMDI1LS4wMjIt%0D%0ALjA1NS0uMDQ3LS4xMS0uMDk0LS4xNjYtLjE0LS4wMTYtLjAxMy0uMDMyLS4wMjYtLjA0Ny0uMDM4%0D%0ALS4wMzctLjAzLS4wNzUtLjA2MS0uMTEzLS4wOTEtLjAyNS0uMDItLjA1MS0uMDQtLjA3Ni0uMDYt%0D%0ALjAyOS0uMDIyLS4wNTctLjA0NC0uMDg2LS4wNjYtLjY2Ni0uNTA3LTEuMzk3LS45MzItMi4xOC0x%0D%0ALjI2MWwtMTIyLjcxOC01NC44NDZjLTIuNTk2LTEuMTYtNS41NjQtMS4xNi04LjE2IDBsLTEyMi43%0D%0AMjIgNTQuODQ0Yy0uNzgyLjMyOS0xLjUxMy43NTQtMi4xNzkgMS4yNjEtLjAyOS4wMjItLjA1OC4w%0D%0ANDQtLjA4Ni4wNjYtLjAyNi4wMi0uMDUxLjA0LS4wNzYuMDYtLjAzOC4wMy0uMDc1LjA2LS4xMTMu%0D%0AMDkxLS4wMTYuMDEzLS4wMzIuMDI1LS4wNDcuMDM4LS4wNTYuMDQ2LS4xMTEuMDkzLS4xNjYuMTQt%0D%0ALjAwOC4wMDctLjAxNi4wMTQtLjAyNS4wMjItLjA0OS4wNDItLjA5OC4wODYtLjE0Ni4xMjktLjAx%0D%0ALjAwOS0uMDIuMDE4LS4wMy4wMjctLjA1My4wNDgtLjEwNS4wOTctLjE1Ny4xNDYtLjAwMi4wMDIt%0D%0ALjAwMy4wMDMtLjAwNS4wMDUtLjA1Ny4wNTQtLjExMy4xMDktLjE2OC4xNjQtLjAwMy4wMDMtLjAw%0D%0ANi4wMDYtLjAwOS4wMDktLjA0OS4wNDktLjA5Ny4wOTktLjE0NS4xNDktLjAxLjAxMS0uMDIxLjAy%0D%0AMS0uMDMxLjAzMi0uMDQzLjA0NS0uMDg2LjA5MS0uMTI4LjEzNy0uMDA5LjAxLS4wMTkuMDItLjAy%0D%0AOC4wMy0uMDQ2LjA1MS0uMDkyLjEwMy0uMTM4LjE1NS0uMDE5LjAyMS0uMDM3LjA0My0uMDU2LjA2%0D%0ANS0uMDI1LjAzLS4wNTEuMDYtLjA3Ni4wOS0uMDI0LjAyOS0uMDQ4LjA1OC0uMDcyLjA4Ny0uMDE3%0D%0ALjAyMS0uMDM0LjA0Mi0uMDUuMDYzLTEuMTkyIDEuNDg0LTEuOTY5IDMuMzE0LTIuMTU1IDUuMzE3%0D%0ALS4wMDIuMDIzLS4wMDQuMDQ3LS4wMDYuMDctLjAwNC4wNDUtLjAwOC4wODktLjAxMS4xMzMtLjAw%0D%0ANS4wNjQtLjAwOS4xMjktLjAxMi4xOTMtLjAwMi4wMy0uMDAzLjA2LS4wMDQuMDktLjAwMi4wNS0u%0D%0AMDA0LjEwMS0uMDA2LjE1MS0uMDAxLjAyNS0uMDAxLjA0OS0uMDAyLjA3NC0uMDAyLjA3NS0uMDAz%0D%0ALjE1MS0uMDAzLjIyNnYxNTcuMDk4bC0xMTYuODE1IDUyLjIwNmMtLjAwMy4wMDEtLjAwNi4wMDIt%0D%0ALjAwOS4wMDQtMy42OTQgMS41NDktNi4xMDggNS4xNi02LjEwOCA5LjE2NnYuMDQ3IDE2My41OGMw%0D%0AIDMuOTQ0IDIuMzE4IDcuNTIgNS45MiA5LjEyOSAwIDAgMTIyLjk0NiA1NC45NDQgMTIyLjk1MyA1%0D%0ANC45NDdsLjA1OC4wMjZjMi41MzIgMS4xNDQgNS40MzQgMS4xNSA3Ljk3LjAxNGwuMTExLS4wNSAx%0D%0AMTguODUyLTUzLjExMyAxMTguODUyIDUzLjExNWMuMDAxLjAwMS4xNTUuMDU5LjQwMy4xNTMgMi41%0D%0AMDUuOTUyIDUuMjkxLjg5OSA3Ljc1NS0uMTUzLjAwMSAwIC4wMDEtLjAwMS4wMDEtLjAwMWwxMjIu%0D%0AOTMyLTU0LjkzOGMzLjYwMS0xLjYwOSA1LjkyLTUuMTg1IDUuOTItOS4xMjl2LTE2My41OHptLTEz%0D%0AMi45MzEgNDQuNjYtOTguNDIzLTQzLjk4NiA5OC40MjMtNDMuOTg1IDk4LjQyMyA0My45ODV6bS0x%0D%0AMjIuOTMyLTE2Ny44OGM1LjUyMiAwIDkuOTk5LTQuNDc3IDkuOTk5LTkuOTk5di0yMy4yMDNsMTAy%0D%0ALjkzMy00NnYxNDEuNjc0bC0xMDIuOTMzIDQ2LjAwMXYtMjguMDY0YzAtNS41MjMtNC40NzctMTAt%0D%0AOS45OTktMTBzLTkuOTk5IDQuNDc3LTkuOTk5IDEwdjI4LjA2NGwtMTAyLjkzMy00Ni4wMDF2LTE0%0D%0AMS42NzRsMTAyLjkzMyA0NnYyMy4yMDNjLS4wMDEgNS41MjMgNC40NzcgOS45OTkgOS45OTkgOS45%0D%0AOTl6bTAtMTM4LjYwOSA5OC40MjQgNDMuOTg2LTk4LjQyNCA0My45ODQtOTguNDI0LTQzLjk4NXpt%0D%0ALTEyMi45MzIgMjE4LjUxOCA5OC40MjQgNDMuOTg1LTk4LjQyNCA0My45ODYtOTguNDIzLTQzLjk4%0D%0ANnptLTExMi45MzMgNTkuNDA3IDEwMy4yMDQgNDYuMTIyYy0uMTc3Ljc0NS0uMjcxIDEuNTIxLS4y%0D%0ANzEgMi4zMnYxMzkuMjMzbC0xMDIuOTMzLTQ2LjAwMXptMTIyLjY2MSA0Ni4xMjEgMTAzLjIwNC00%0D%0ANi4xMjF2MTQxLjY3NWwtMTAyLjkzMyA0Ni4wMDF2LTEzOS4yMzVjMC0uNzk4LS4wOTQtMS41NzUt%0D%0ALjI3MS0yLjMyem0xMjMuMjAzLTQ2LjEyMSAxMDMuMjA0IDQ2LjEyMmMtLjE3Ny43NDUtLjI3MSAx%0D%0ALjUyMS0uMjcxIDIuMzJ2MTM5LjIzM2wtMTAyLjkzMy00Ni4wMDF6bTEyMi45MzIgMTg3LjY3NXYt%0D%0AMTM5LjIzNGMwLS43OTktLjA5NC0xLjU3Ni0uMjcxLTIuMzJsMTAzLjIwNC00Ni4xMjJ2MTQxLjY3%0D%0ANXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRf%0D%0AY29sb3I9IiMwMDAwMDAiIGZpbGw9IiNGRkZGRkYiLz48Zz48cGF0aCBkPSJtMjU2IDIwNC41Nzlj%0D%0ALTQuMjMyIDAtOC4xMTItMi43NzQtOS40Ny02Ljc4Ni0xLjI4LTMuNzgtLjEzLTguMDk3IDIuODc2%0D%0ALTEwLjcyOSAzLjI3Ny0yLjg2OSA4LjE3MS0zLjI1OCAxMS44Ny0uOTcgMy41NDYgMi4xOTQgNS4z%0D%0AOCA2LjUzMiA0LjQ4OCAxMC42MDQtLjk5NSA0LjU0MS01LjEwOCA3Ljg4MS05Ljc2NCA3Ljg4MXoi%0D%0AIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29s%0D%0Ab3I9IiMwMDAwMDAiIGZpbGw9IiNGRkZGRkYiLz48L2c+PC9nPjwvZz48L2c+IDwvc3ZnPgo="
+              class="ingredients-icon"
+            />
             <p class="text-ingredient">100gr of sugar</p>
-
           </div>
 
           <div class="single-ingredient">
-
-            <img <img src="butter.svg" class="ingredients-icon">
+            <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv%0D%0Ac3ZnIiBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWln%0D%0AaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiBjbGFzcz0iIj48%0D%0AZz48cGF0aCBkPSJtNDg4LjQ2OCAyNjAuNTI0aC0xMi40NjVsLTcyLjY3OC02Ny4yNzRjLTQuNjEz%0D%0ALTQuMjctMTAuNjA4LTYuNDkxLTE2Ljg5NC02LjI0NS02LjI4MS4yNDItMTIuMDkyIDIuOTE3LTE2%0D%0ALjM2MSA3LjUyOWwtOC4zMDQgOC45NzEtMTIuMjAxLTM0LjE5NWMtLjY2OC0xLjg3My0yLjA1NC0z%0D%0ALjQwNS0zLjg1MS00LjI1Ny0xLjc5OC0uODUyLTMuODYtLjk1NS01LjczMy0uMjg3bC0yNy43Mjkg%0D%0AOS44OTR2LTIuODNjMC00LjE0Mi0zLjM1OC03LjUtNy41LTcuNWgtMjMzLjEyM2MtMTIuOTc2IDAt%0D%0AMjMuNTMyIDEwLjU1Ny0yMy41MzIgMjMuNTMydjcyLjY2MWgtMjQuNTY1Yy0xMi45NzUuMDAxLTIz%0D%0ALjUzMiAxMC41NTgtMjMuNTMyIDIzLjUzM3MxMC41NTcgMjMuNTMyIDIzLjUzMiAyMy41MzJoMi45%0D%0AMzhsOC4xIDIwLjI0OWM0LjgxOSAxMi4wNDcgMTYuMzE3IDE5LjgzMiAyOS4yOTIgMTkuODMyaDM4%0D%0ANC4yNzVjMTIuOTc1IDAgMjQuNDczLTcuNzg0IDI5LjI5Mi0xOS44MzJsOC4xLTIwLjI0OWgyLjkz%0D%0AOGMxMi45NzYgMCAyMy41MzItMTAuNTU2IDIzLjUzMi0yMy41MzJzLTEwLjU1Ni0yMy41MzItMjMu%0D%0ANTMxLTIzLjUzMnptLTEwNy4zOTEtNTUuODAxYzEuNTQ4LTEuNjczIDMuNjU1LTIuNjQyIDUuOTMy%0D%0ALTIuNzMgMi4yNzgtLjA4NiA0LjQ1My43MTYgNi4xMjUgMi4yNjRsNjAuNzg2IDU2LjI2N2gtMzYu%0D%0AOTIybC00Ny4xNjMtNDMuNjU3em0xMy44NDEgNTUuODAxaC0xMi44NDNjLS4wNTQtLjIwNi0uMTEy%0D%0ALS40MTEtLjE4NS0uNjE1bC02LjA5Ny0xNy4wODh6bS01Ni45NjEtNzkuMTA5IDI4LjIyNiA3OS4x%0D%0AMDloLTI2LjYyOWwtMjUuMjItNzAuNjgxem0tMTQuMzI5IDc5LjEwOWgtMTEuMzc4di0zMS44ODd6%0D%0AbS0yNjAuNTMxLTcyLjY2MWMwLTQuNzA1IDMuODI4LTguNTMyIDguNTMyLTguNTMyaDIyNS42MjF2%0D%0AODEuMTk0aC0yMzQuMTUzem00MjUuMzcxIDEwNC43MjZoLTM5Mi43OTJjLTQuMTQyIDAtNy41IDMu%0D%0AMzU4LTcuNSA3LjVzMy4zNTggNy41IDcuNSA3LjVoMzczLjY5OGwtNS44NzEgMTQuNjc4Yy0yLjUy%0D%0AOCA2LjMyLTguNTU5IDEwLjQwMy0xNS4zNjUgMTAuNDAzaC0zODQuMjc2Yy02LjgwNiAwLTEyLjgz%0D%0ANy00LjA4My0xNS4zNjUtMTAuNDAzbC01Ljg3MS0xNC42NzhoMjAuOTg3YzQuMTQyIDAgNy41LTMu%0D%0AMzU4IDcuNS03LjVzLTMuMzU4LTcuNS03LjUtNy41aC00MC4wODFjLTQuNzA1IDAtOC41MzItMy44%0D%0AMjgtOC41MzItOC41MzJzMy44MjgtOC41MzIgOC41MzItOC41MzJoNDY0LjkzNmM0LjcwNSAwIDgu%0D%0ANTMyIDMuODI4IDguNTMyIDguNTMycy0zLjgyOCA4LjUzMi04LjUzMiA4LjUzMnoiIGRhdGEtb3Jp%0D%0AZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiMwMDAw%0D%0AMDAiIGZpbGw9IiNGRkZGRkYiLz48L2c+IDwvc3ZnPgo="
+              class="ingredients-icon"
+            />
             <p class="text-ingredient">150gr of butter</p>
-
           </div>
 
           <div class="single-ingredient">
-
-            <img <img src="lemon.svg" class="ingredients-icon">
+            <img
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv%0D%0Ac3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0i%0D%0AMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMS45OTkgNTEx%0D%0ALjk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjk5OSA1MTEuOTk5OyIg%0D%0AeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48Zz48Zz4K%0D%0ACTxnPgoJCTxwYXRoIGQ9Ik0zOTkuODQsNDMwLjk3NmMtMi44NDEtMy4wMjUtNy41OTctMy4xNzgt%0D%0AMTAuNjIzLTAuMzM4Yy03Ljc2Miw3LjI4Mi0xNi4xMjcsMTMuNTQ0LTI0Ljg2NCwxOC42MSAgICBj%0D%0ALTExLjI1Miw2LjUyNi0yMC40ODYsMTYuNjU3LTI2LjcwMiwyOS4zYy0xMi4wNjEsMjQuNTI5LTQ5%0D%0ALjA2NSwyNC42NzItNjEuMTk4LDBjLTYuMjE3LTEyLjY0My0xNS40NTEtMjIuNzc2LTI2LjcwMy0y%0D%0AOS4zMDEgICAgYy02Ni42MTUtMzguNjI3LTk5LjEyNi0xMzcuNTgyLTcyLjQ5My0yMjUuNzM0YzEu%0D%0AMTk5LTMuOTczLTEuMDQ4LTguMTY3LTUuMDIxLTkuMzY3Yy0zLjk3My0xLjE5Ni04LjE2NiwxLjA0%0D%0ANy05LjM2Nyw1LjAyMSAgICBjLTE3LjAyNSw1Ni4zNTUtMTIuMTUsMTIwLjkyOCwxNC43NjMsMTcy%0D%0ALjg5N2MxNS44NTEsMzAuNjEsMzguMTgyLDU0Ljg3OSw2NC41NzgsNzAuMTg1YzguNjc2LDUuMDMy%0D%0ALDE1Ljg1MywxMi45NjEsMjAuNzU2LDIyLjkzMiAgICBjMTcuNTYxLDM1LjcxLDcwLjU2LDM1Ljgw%0D%0AOCw4OC4xNzEsMGMxMS42MzItMjMuNjYxLDIyLjk3NS0xOS43NjEsNDguMzY0LTQzLjU4M0M0MDIu%0D%0ANTI4LDQzOC43NTgsNDAyLjY4LDQzNC4wMDIsMzk5Ljg0LDQzMC45NzZ6IiBkYXRhLW9yaWdpbmFs%0D%0APSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIiBm%0D%0AaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzEuNTk1LDEx%0D%0AMi4yOTNjLTguNTY1LTQuOTM5LTE1LjY3OC0xMi43NDItMjAuNTctMjIuNTY3Yy02Ljk3My0xNC0y%0D%0AMC44MDUtMjMuNzE0LTM2LjQ1OS0yNi4xVjcuNDk0ICAgIGMwLTcuODIyLTEwLjU5Mi0xMC40Mjkt%0D%0AMTQuMjE3LTMuNDA3Yy0wLjYzMSwxLjI0Mi0xMy43MDYsMjYuMDQtNDYuMDU4LDM4LjQzNGMtMjEu%0D%0AMjE5LTYuOTAyLTIwLjI4NS02LjY3My0yMS4xNDEtNi44MzMgICAgYy0yMC4xOTQtMy43OTgtNDAu%0D%0AMzQ2LTQuNDQzLTU5Ljk1NS0xLjAxMmMtNC4wODgsMC43NDEtNi44MDMsNC42NDktNi4wNjIsOC43%0D%0AMjdjMC43MzEsNC4wODgsNC42MjksNi44MDMsOC43MjcsNi4wNzIgICAgYzI1LjkzMy00LjcxNSw0%0D%0AOC40MzEsMC4zMjcsNTQuMjg0LDAuOTcybDE2LjY3Miw1LjQ0Yy0yOC43NjIsNjYuMDA1LTk2LjYz%0D%0ANCwxMDcuMDUyLTE3My4yNTMsOTkuMTkgICAgYzI2LjYwOC0zMi45OTQsMjkuMDEzLTc1LjQxNCw3%0D%0ANS41NTUtOTcuMTk3YzMuNzU3LTEuNzUzLDUuMzgtNi4yMzIsMy42MjctOS45ODljLTEuNzYzLTMu%0D%0ANzU3LTYuMjMyLTUuMzgtOS45ODktMy42MTcgICAgYy01Ny4xMzEsMjYuNzE4LTU1LjcyOSw3OC45%0D%0AMTEtODkuNTAyLDExMC43MTNjLTQuNDU1LDQuMTk0LTIuMjgyLDExLjY4OCwzLjczNywxMi44NDUg%0D%0AICAgYzg1LjUzNywxNi4zNCwxNzMuNzY5LTI4LjIzLDIwNi40MTYtMTEyLjc4N2MxNi4yNDEtNi45%0D%0AMDMsMjguMDQ0LTE2LjUyMiwzNi4xMjktMjUuMDE4djMzLjU5NyAgICBjLTE1LjY1MywyLjM4Ny0y%0D%0AOS40ODYsMTIuMS0zNi40NTksMjYuMTAxYy00Ljg5Miw5LjgyNC0xMi4wMDUsMTcuNjI4LTIwLjU3%0D%0ALDIyLjU2NmMtMjguODAxLDE2LjYwNy01Mi41MDMsNDMuNTEyLTY4LjU0NCw3Ny44MDUgICAgYy0x%0D%0ALjc1OCwzLjc1OS0wLjEzNiw4LjIzMiwzLjYyMyw5Ljk5YzMuNzYyLDEuNzU5LDguMjMzLDAuMTM2%0D%0ALDkuOTkxLTMuNjIzYzE0LjcyNy0zMS40OSwzNi4zMTgtNTYuMDk0LDYyLjQzNi03MS4xNTUgICAg%0D%0AYzExLjEzNC02LjQyLDIwLjMwNC0xNi40MDksMjYuNTE3LTI4Ljg4NmM5LjUzLTE5LjEzMiwzMC44%0D%0ANjgtMTguNDQ2LDMwLjUyMS0xOC4zNDZjMC4wMDksMCwwLjAxNy0wLjAwMSwwLjAyNi0wLjAwMSAg%0D%0AICBjMTIuOTc5LDAuMDEsMjQuOTQ2LDcuMjA5LDMwLjQ5NCwxOC4zNDdjNi4yMTQsMTIuNDc4LDE1%0D%0ALjM4MywyMi40NjYsMjYuNTE4LDI4Ljg4NmM4Ni41NDgsNDkuOTA3LDExMC4wNzIsMTk0LjU1NSw0%0D%0ANC4xMjEsMjgzLjg3MSAgICBjLTMuNjkyLDQuOTk5LTAuMDM3LDExLjk3OSw2LjAzOSwxMS45Nzlj%0D%0AMi4zMDMsMCw0LjU3Ny0xLjA1Niw2LjA1MS0zLjA1MUM0OTEuMTMsMzIyLjE4OCw0NjYuNTExLDE2%0D%0ANy4wMjEsMzcxLjU5NSwxMTIuMjkzeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFj%0D%0AdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9n%0D%0APgo8L2c+PC9nPiA8L3N2Zz4K"
+              class="ingredients-icon"
+            />
             <p class="text-ingredient">zest of one lemon</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-         </div>
-    </div>
- </div>
-</section>
-
-
-    <section class="recipe-section" id="recipe">
+    <section class="section" id="recipe">
       <h1 class="recipe-h1">The legendary recipe</h1>
       <div class="recipe-container">
         <div class="recipe-step">
           <p class="recipe-number">1</p>
-          <p>Mix the chopped butter with the flour, egg, sugar and lemon zest</p>
+          <p>
+            Mix the chopped butter with the flour, egg, sugar and lemon zest.
+          </p>
         </div>
 
         <div class="recipe-step">
           <p class="recipe-number">2</p>
-          <p>Knead the dough fast,make a ball and put it into the fridge for 30 min.</p>
+          <p>
+            Knead the dough fast,make a ball and put it into the fridge for 30
+            min.
+          </p>
         </div>
 
         <div class="recipe-step">
           <p class="recipe-number">3</p>
-          <p>Use the rolin pin to flat the dough and add your favourite jam on top.</p>
+          <p>
+            Use the rollin pin to flat the dough and add your favourite jam on
+            top.
+          </p>
         </div>
 
         <div class="recipe-step">
           <p class="recipe-number">4</p>
-          <p>Bake in the oven for 30 min at 180C until the surface is golden.</p>
+          <p>
+            Bake in the oven for 30 min at 180C until the surface is golden.
+          </p>
         </div>
-
       </div>
-
-   </section>
+    </section>
     <footer class="footer">
       <div class="footer-container">
-       <p>&copy;2020 Alice Moretti. All Rights Reserved.</p>
+        <p>&copy;2020 Alice Moretti. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menu-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+          x.className += " responsive";
+        }
+      }
+    </script>
   </body>
 </html>
+
